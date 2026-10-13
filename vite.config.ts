@@ -20,10 +20,10 @@ import { VitePluginNode } from 'vite-plugin-node'
 export default defineConfig({
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/index.ts'),
-      name: 'MCPApp',
-      fileName: 'index',
-      formats: ['es', 'cjs'],
+      entry: resolve(__dirname, 'src/cloud-run.ts'),
+      name: 'OrangeNetworkAPIMCP',
+      fileName: 'cloud-run',
+      formats: ['es'],
     },
     rollupOptions: {
       external: ['node:fs', 'node:path', 'node:process'],
